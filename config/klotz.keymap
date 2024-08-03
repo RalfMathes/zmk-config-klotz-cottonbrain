@@ -19,10 +19,10 @@
 // READABILITY ├───────────────────────────────────────────────┐
 
 #define TTY_1 &kp LC(LA(F1))
-#define TTY_2 &kp LCL(LA(F2))
-#define TTY_3 &kp LCL(LA(F3))
-#define TTY_4 &kp LCL(LA(F4))
-#define TTY_7 &kp LCL(LA(F7))
+#define TTY_2 &kp LC(LA(F2))
+#define TTY_3 &kp LC(LA(F3))
+#define TTY_4 &kp LC(LA(F4))
+#define TTY_7 &kp LC(LA(F7))
 
 // KLOTZ key numbers
 //  ___________________________________       ___________________________________

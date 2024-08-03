@@ -9,12 +9,11 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define APT 0
-#define NUM 1
-#define NAV 2
-#define SYM 3
-#define FUN 4
-#define BTC 5
+#define BASE 0
+#define LOWER 1
+#define RAISE 2
+#define ADJUST 3
+#define BTC 4
 
 // &lt {
 //     quick_tap_ms = <200>;

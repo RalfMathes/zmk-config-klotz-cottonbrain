@@ -64,8 +64,8 @@
 
             bindings = <
                 &kp EXCL     &kp AT       &kp HASH    &kp DLLR    &kp PRCNT      &kp CARET     &kp AMPS       &kp STAR   &kp LPAR     &kp RPAR
-                &kp COMMA    &kp MINUS    &kp LBKT    &kp GRAVE   &kp -          &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT    &kp RA(O)
-                &kp RALT(N8) &kp RALT(N9) &kp RALT(7) &kp RALT(0) &kp -          &kp PSCRN     &kp RALT(RBRC) &kp NUBS   &kp LS(NUBS) &kp ESC
+                &kp COMMA    &kp MINUS    &kp LBKT    &kp GRAVE   &kp -          &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT    &kp LS(NUHS)
+                &kp RA(N8) &kp RA(N9) &kp RA(7) &kp RA(0) &kp -          &kp PSCRN     &kp RA(RBRC) &kp NUBS   &kp LS(NUBS) &kp ESC
                                                       &lt ADJUST  &hl LGUI SPACE &hr ESC ENTER &trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp C_PREV C_NEXT>;

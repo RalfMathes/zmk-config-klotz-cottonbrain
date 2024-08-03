@@ -12,9 +12,17 @@
 //              █         ██▄▄▄▄▄▄▄▄█▄▄▄▄▄▄▄▄▄▄▀        ██▄▄▄▄▄▄▄▄▄▄
 //
 //▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-       
+
 
 #include "base_5x3T2.h"
+
+// READABILITY ├───────────────────────────────────────────────┐
+
+#define TTY_1 LC(LA(KC_F1))
+#define TTY_2 LCL(LA(KC_F2))
+#define TTY_3 LCL(LA(KC_F3))
+#define TTY_4 LCL(LA(KC_F4))
+#define TTY_7 LCL(LA(KC_F7))
 
 // KLOTZ key numbers
 //  ___________________________________       ___________________________________
@@ -30,78 +38,60 @@
         compatible = "zmk,keymap";
 
         aptmak {
-            label = "APT";
+            label = "BASE";
 
             bindings = <
-                &none          &kp W          &kp F          &kp P          &kp B            &kp J          &kp L          &kp U          &kp Y          &none
-                &hl LCTRL R    &hl LALT S     &hl LGUI T     &hl LSHFT H    &hl RALT K       &hr RALT X     &hr RSHFT N    &hr RGUI A     &hr LALT I     &hr RCTRL O
-                &none          &kp C          &kp G          &kp D          &none            &none          &kp M          &comsem        &dotcol        &none
-                                                             &my_lt NUM SQT &my_lt NAV SPACE &my_lt SYM E   &my_lt FUN ENTER
+                &hl LALT Q     &kp W    &kp E    &kp R    &kp T                  &kp Z     &kp U    &kp I    &kp O    &hr RALT P
+                &hl LSHFT A    &kp S    &kp D    &kp F    &kp G                  &kp H     &kp J    &kp K    &kp L    &hr RSHFT RA(0)
+                &hl LCTRL Y    &kp X    &kp C    &kp V    &kp B                  &kp N     &kp M    &comsem  &dotcol  &hr RCTRL SLASH
+                                                 &my_lt LOWER SQT &hl LGUI SPACE &hr ESC ENTER &my_lt RAISE BSPC
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp LA(TAB) LA(LS(TAB))>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp C_PREV C_NEXT>;
         };
         numbers {
-            label = "NUM";
+            label = "LOWER";
 
             bindings = <
-                &none          &kp N9         &kp N8         &kp N7         &kp ASTERISK   &kp PLUS       &kp N7         &kp N8         &kp N9         &none
-                &hl LCTRL N0   &hl LALT N6    &hl LGUI N5    &hl LSHFT N4   &hl RALT SLASH &kp MINUS      &kp N4         &kp N5         &kp N6         &kp DOT
-                &none          &kp N3         &kp N2         &kp N1         &none          &kp EQUAL      &kp N1         &kp N2         &kp N3         &none
-                                                             &trans         &trans         &kp E          &kp N0
+                &kp N1   &kp N2    &kp N3  &kp N4   &kp N5           &kp N6        &kp N7     &kp N8   &kp N9   &kp N0
+                &kp F1   &kp F2    &kp F3  &kp F4   &kp F5           &kp F6        &kp F7     &kp F8   &kp F9   &kp F10
+                &kp F11  &kp F12   &trans  &kp DEL  &kp TAB          &kp TAB       &kp UNDER  &kp PLUS &kp NUHS &kp RBKT
+                                           &trans   &hl LGUI SPACE   &hr ESC ENTER &lt ADJUST
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp LC(A) LC(X)>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp C_PREV C_NEXT>;
         };
         navigation {
-            label = "NAV";
+            label = "RAISE";
 
             bindings = <
-                &none          &kp INSERT     &kp UP         &kp BSPC        &kp C_VOL_DN   &kp C_VOL_UP   &kp BSPC       &kp DEL        &kp INSERT     &kp C_PP
-                &kp LCTRL      &hl LALT LEFT  &hl LGUI DOWN  &hl LSHFT RIGHT &kp C_MUTE     &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      &kp TAB
-                &none          &kp HOME       &kp PG_DN      &kp END         &kp C_BRI_DN   &kp C_BRI_UP   &kp HOME       &kp PG_UP      &kp END        &none
-                                                             &trans          &trans         &trans         &trans
+                &kp EXCL     &kp AT       &kp HASH    &kp DLLR    &kp PRCNT      &kp CARET     &kp AMPS       &kp STAR   &kp LPAR     &kp RPAR
+                &kp COMMA    &kp MINUS    &kp LBKT    &kp GRAVE   &kp -          &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT    &kp RA(O)
+                &kp RALT(N8) &kp RALT(N9) &kp RALT(7) &kp RALT(0) &kp -          &kp PSCRN     &kp RALT(RBRC) &kp NUBS   &kp LS(NUBS) &kp ESC
+                                                      &lt ADJUST  &hl LGUI SPACE &hr ESC ENTER &trans
             >;
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN  &inc_dec_kp LC(RIGHT) LC(LEFT)>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp C_PREV C_NEXT>;
         };
         symbols {
-            label = "SYM";
+            label = "ADJUST";
 
             bindings = <
-                &none          &kp GRAVE      &kp DQT        &kp RA(LS(SEMI)) &kp LBRC       &kp RBRC       &kp BACKSLASH  &kp PIPE       &kp LT         &kp GT
-                &kp EXCL       &kp AT         &kp HASH       &kp DOLLAR       &kp LPAR       &kp RPAR       &kp AMPERSAND  &kp ASTERISK   &kp PERCENT    &kp CARET
-                &none          &kp TILDE      &kp SQT        &kp UNDERSCORE   &kp LBKT       &kp RBKT       &kp MINUS      &kp PLUS       &kp EQUAL      &none
-                                                             &trans           &trans         &trans         &trans
+                &none    &kp C_PREV &kp C_PP &kp C_NEXT &none      &none    &none    &none    &none    &none
+                &none    &none      &none    &none      &none      &none    &none    &none    &none    &none
+                &none    &none      &none    &none      &none      &none    &none    &none    &none    &none
+                                             &trans     &trans     &trans   &trans
             >;
-            sensor-bindings = <&inc_dec_kp SPACE BSPC  &inc_dec_kp RIGHT LEFT>;
-        };
-        function {
-            label = "FUN";
-
-            bindings = <
-                &none          &bootloader    &none          &none          &none          &kp F12        &kp F7         &kp F8         &kp F9         &none
-                &none          &none          &none          &none          &none          &kp F11        &kp F4         &kp F5         &kp F6         &kp F10
-                &none          &none          &none          &none          &none          &none          &kp F1         &kp F2         &kp F3         &none
-                                                             &mo BTC        &trans         &trans         &trans
-            >;
-            sensor-bindings = <&inc_dec_kp UP DOWN  &inc_dec_kp RIGHT LEFT>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp C_PREV C_NEXT>;
         };
         bluetooth {
             label = "BTC";
 
             bindings = <
-                &none          &none          &none          &none          &none          &out OUT_USB   &bt BT_PRV     &bt BT_NXT     &none          &bt BT_CLR
-                &bootloader    &none          &none          &none          &none          &out OUT_BLE   &bt BT_SEL 3   &bt BT_SEL 4   &none          &none
-                &none          &none          &none          &none          &none          &out OUT_TOG   &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &none
-                                                             &none          &none          &none          &none
+                &none       &none  &none  &none  &none          &out OUT_USB  &bt BT_PRV    &bt BT_NXT    &none         &bt BT_CLR
+                &bootloader &none  &none  &none  &none          &out OUT_BLE  &bt BT_SEL 3  &bt BT_SEL 4  &none         &none
+                &none       &none  &none  &none  &none          &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none
+                                          &none  &none          &none         &none
             >;
-            sensor-bindings = <&inc_dec_kp UP DOWN  &inc_dec_kp RIGHT LEFT>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp C_PREV C_NEXT>;
         };
 
     };
 };
-
-//  ___________________________________       ___________________________________
-// |  0  |  1  |  2  |  3  |  4  |     |     |     |    5 |   6 |   7 |   8 |  9  |
-// | 10  | 11  | 12  | 13  | 14  |     |     |     |   15 |  16 |  17 |  18 | 19  |
-// | 20  | 21  | 22  | 23  | 24  | ROT |     | ROT |   25 |  26 |  27 |  28 | 29  |
-// |                         30  | 31  |     |  32 |  33                         |
-//  -----------------------------------       -----------------------------------

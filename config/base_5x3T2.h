@@ -123,7 +123,7 @@ combo_##NAME { \
             label = "homerow mods left";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <150>;
+            tapping-term-ms = <120>;
             quick-tap-ms = <100>;
             // global-quick-tap;
             bindings = <&kp>, <&kp>;
@@ -136,7 +136,7 @@ combo_##NAME { \
             label = "homerow mods right";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <150>;
+            tapping-term-ms = <120>;
             quick-tap-ms = <100>;
             // global-quick-tap;
             bindings = <&kp>, <&kp>;
@@ -150,7 +150,7 @@ combo_##NAME { \
             #binding-cells = <2>;
             // flavor = "tap-preferred";
             flavor = "balanced";
-            tapping-term-ms = <150>;
+            tapping-term-ms = <120>;
             quick-tap-ms = <100>;
             // global-quick-tap;
             bindings = <&mo &kp>, <&kp>;

@@ -44,7 +44,7 @@
                 &hl LALT Q     &kp W    &kp E    &kp R    &kp T                  &kp Y     &kp U    &kp I     &kp O    &hr RALT P
                 &hl LSHFT A    &kp S    &kp D    &kp F    &kp G                  &kp H     &kp J    &kp K     &kp L    &hr RSHFT SEMI
                 &hl LCTRL Z    &kp X    &kp C    &kp V    &kp B                  &kp N     &kp M    &kp COMMA &kp DOT  &hr RCTRL SLASH
-                                                 &my_lt LOWER SPACE &hl LGUI ESC &kp ENTER &my_lt RAISE BSPC
+                                                 &my_lt LOWER ESC &hl LGUI SPACE &kp ENTER &my_lt RAISE BSPC
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp C_PREV C_NEXT>;
         };
@@ -55,7 +55,7 @@
                 &kp N1   &kp N2    &kp N3  &kp N4   &kp N5           &kp N6        &kp N7     &kp N8   &kp N9   &kp N0
                 &kp F1   &kp F2    &kp F3  &kp F4   &kp F5           &kp F6        &kp F7     &kp F8   &kp F9   &kp F10
                 &kp F11  &kp F12   &trans  &kp DEL  &kp TAB          &kp TAB       &kp UNDER  &kp PLUS &kp NUHS &kp RBKT
-                                           &trans   &hl LGUI ESC   &hr ESC ENTER &mo ADJUST
+                                           &trans   &hl LGUI SPACE   &hr ESC ENTER &mo ADJUST
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp C_PREV C_NEXT>;
         };
@@ -66,7 +66,7 @@
                 &kp EXCL    &kp AT      &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET     &kp AMPS     &kp STAR   &kp LPAR     &kp RPAR
                 &kp SQT     &kp MINUS   &kp LBKT   &kp GRAVE  &none          &kp LEFT      &kp DOWN     &kp UP     &kp RIGHT    &kp LS(NUHS)
                 &kp RA(N8)  &kp RA(N9)  &kp RA(N7) &kp RA(N0) &none          &kp PSCRN     &kp RA(RBKT)    &kp NUBS   &kp LS(NUBS) &kp ESC
-                                                   &mo ADJUST &hl LGUI ESC &hr ESC ENTER &trans
+                                                   &mo ADJUST &hl LGUI SPACE &hr ESC ENTER &trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp C_PREV C_NEXT>;
         };
@@ -76,7 +76,7 @@
             bindings = <
                 &none    &kp C_PREV &kp C_PP &kp C_NEXT &none      TTY_1    TTY_2    TTY_3    TTY_4    TTY_7
                 &none    &none      &none    &none      &none      &none    &none    &none    &none    &none
-                &none    &none      &none    &none      &none      &none    &none    &none    &none    &none
+                &none    &none      &none    &none      &none      &none    &none    &none    &none    &sys_reset
                                              &trans     &trans     &trans   &trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp C_PREV C_NEXT>;

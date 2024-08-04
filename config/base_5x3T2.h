@@ -122,7 +122,8 @@ combo_##NAME { \
             compatible = "zmk,behavior-hold-tap";
             label = "homerow mods left";
             #binding-cells = <2>;
-            flavor = "hold-while-undecided";
+            flavor = "hold-preferred";
+            hold-while-undecided;
             tapping-term-ms = <120>;
             /* quick-tap-ms = <100>; */
             // global-quick-tap;
@@ -135,7 +136,8 @@ combo_##NAME { \
             compatible = "zmk,behavior-hold-tap";
             label = "homerow mods right";
             #binding-cells = <2>;
-            flavor = "hold-while-undecided";
+            flavor = "hold-preferred";
+            hold-while-undecided;
             tapping-term-ms = <120>;
             /* quick-tap-ms = <100>; */
             // global-quick-tap;
@@ -148,7 +150,8 @@ combo_##NAME { \
             compatible = "zmk,behavior-hold-tap";
             label = "my layer taps";
             #binding-cells = <2>;
-            flavor = "hold-while-undecided";
+            flavor = "hold-preferred";
+            hold-while-undecided;
             tapping-term-ms = <120>;
             /* quick-tap-ms = <100>; */
             // global-quick-tap;

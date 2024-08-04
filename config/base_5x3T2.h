@@ -124,7 +124,7 @@ combo_##NAME { \
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <120>;
-            quick-tap-ms = <120>;
+            quick-tap-ms = <200>;
             // global-quick-tap;
             bindings = <&kp>, <&kp>;
             // opposite side hand keys
@@ -137,7 +137,7 @@ combo_##NAME { \
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <120>;
-            quick-tap-ms = <120>;
+            quick-tap-ms = <200>;
             // global-quick-tap;
             bindings = <&kp>, <&kp>;
             // opposite side hand keys
@@ -150,7 +150,7 @@ combo_##NAME { \
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <120>;
-            quick-tap-ms = <120>;
+            quick-tap-ms = <200>;
             // global-quick-tap;
             bindings = <&mo &kp>, <&kp>;
             // non-thumb keys

@@ -55,66 +55,66 @@ combo_##NAME { \
 // |                         30  | 31  |     |  32 |  33                         |
 //  -----------------------------------       -----------------------------------
 
-/ {
-    combos {
-        compatible = "zmk,combos";
-/* usually on base layer */
-        COMBO(q, &kp Q, 2 3)
-        COMBO(z, &kp Z, 21 22)
-        COMBO(v, &kp V, 1 2)
-        COMBO(sch, &macro_sch, 1 3)
-        COMBO(slash, &kp SLASH, 27 28)
-        COMBO(dash, &kp MINUS, 26 27)
-        COMBO(enter, &kp ENTER, 26 28)
-        COMBO(esc, &kp ESC, 22 23)
-/* parentheticals */
-        COMBO(lbrc, &kp LBRC, 1 11)
-        COMBO(lbkt, &kp LBKT, 2 12)
-        COMBO(lpar, &kp LPAR, 3 13)
-        COMBO(lt, &kp LT, 4 14)
-        COMBO(gt, &kp GT, 5 15)
-        COMBO(rpar, &kp RPAR, 6 16)
-        COMBO(rbkt, &kp RBKT, 7 17)
-        COMBO(rbrc, &kp RBRC, 8 18)
-/* caps */
-        COMBO(caps, &caps_word, 13 16)
-        COMBO(capslock, &kp CAPSLOCK, 1 8)
-/* deletion */
-        COMBO(bspc, &kp BSPC, 6 7)
-        COMBO(del, &kp DEL, 7 8)
-        COMBO(delword, &kp LC(BSPC), 6 8)
-/* alternative shifting */
-        COMBO(Sq, &kp LS(Q), 2 3 31)
-        COMBO(Sz, &kp LS(Z), 21 22 31)
-        COMBO(Sv, &kp LS(V), 1 2 31)
-        COMBO(Ssch, &macro_shifted_sch, 1 3 31)
-        COMBO(Sw, &kp LS(W), 1 31)
-        COMBO(Sf, &kp LS(F), 2 31)
-        COMBO(Sp, &kp LS(P), 3 31)
-        COMBO(Sb, &kp LS(B), 4 31)
-        COMBO(Sj, &kp LS(J), 5 32)
-        COMBO(Sl, &kp LS(L), 6 32)
-        COMBO(Su, &kp LS(U), 7 32)
-        COMBO(Sy, &kp LS(Y), 8 32)
-        COMBO(Sr, &kp LS(R), 10 31)
-        COMBO(Ss, &kp LS(S), 11 31)
-        COMBO(St, &kp LS(T), 12 31)
-        COMBO(Sh, &kp LS(H), 13 31)
-        COMBO(Sk, &kp LS(K), 14 31)
-        COMBO(Sx, &kp LS(X), 15 32)
-        COMBO(Sn, &kp LS(N), 16 32)
-        COMBO(Sa, &kp LS(A), 17 32)
-        COMBO(Si, &kp LS(I), 18 32)
-        COMBO(So, &kp LS(O), 19 32)
-        COMBO(Sc, &kp LS(C), 21 31)
-        COMBO(Sg, &kp LS(G), 22 31)
-        COMBO(Sd, &kp LS(D), 23 31)
-        COMBO(Sm, &kp LS(M), 26 32)
-        COMBO(Scomma, &kp SEMI, 27 32)
-        COMBO(Sdot, &kp COLON, 28 32)
-        COMBO(Se, &kp LS(E), 16 17 32)
-    };
-};
+/* / { */
+/*     combos { */
+/*         compatible = "zmk,combos"; */
+/* /1* usually on base layer *1/ */
+/*         COMBO(q, &kp Q, 2 3) */
+/*         COMBO(z, &kp Z, 21 22) */
+/*         COMBO(v, &kp V, 1 2) */
+/*         COMBO(sch, &macro_sch, 1 3) */
+/*         COMBO(slash, &kp SLASH, 27 28) */
+/*         COMBO(dash, &kp MINUS, 26 27) */
+/*         COMBO(enter, &kp ENTER, 26 28) */
+/*         COMBO(esc, &kp ESC, 22 23) */
+/* /1* parentheticals *1/ */
+/*         COMBO(lbrc, &kp LBRC, 1 11) */
+/*         COMBO(lbkt, &kp LBKT, 2 12) */
+/*         COMBO(lpar, &kp LPAR, 3 13) */
+/*         COMBO(lt, &kp LT, 4 14) */
+/*         COMBO(gt, &kp GT, 5 15) */
+/*         COMBO(rpar, &kp RPAR, 6 16) */
+/*         COMBO(rbkt, &kp RBKT, 7 17) */
+/*         COMBO(rbrc, &kp RBRC, 8 18) */
+/* /1* caps *1/ */
+/*         COMBO(caps, &caps_word, 13 16) */
+/*         COMBO(capslock, &kp CAPSLOCK, 1 8) */
+/* /1* deletion *1/ */
+/*         COMBO(bspc, &kp BSPC, 6 7) */
+/*         COMBO(del, &kp DEL, 7 8) */
+/*         COMBO(delword, &kp LC(BSPC), 6 8) */
+/* /1* alternative shifting *1/ */
+/*         COMBO(Sq, &kp LS(Q), 2 3 31) */
+/*         COMBO(Sz, &kp LS(Z), 21 22 31) */
+/*         COMBO(Sv, &kp LS(V), 1 2 31) */
+/*         COMBO(Ssch, &macro_shifted_sch, 1 3 31) */
+/*         COMBO(Sw, &kp LS(W), 1 31) */
+/*         COMBO(Sf, &kp LS(F), 2 31) */
+/*         COMBO(Sp, &kp LS(P), 3 31) */
+/*         COMBO(Sb, &kp LS(B), 4 31) */
+/*         COMBO(Sj, &kp LS(J), 5 32) */
+/*         COMBO(Sl, &kp LS(L), 6 32) */
+/*         COMBO(Su, &kp LS(U), 7 32) */
+/*         COMBO(Sy, &kp LS(Y), 8 32) */
+/*         COMBO(Sr, &kp LS(R), 10 31) */
+/*         COMBO(Ss, &kp LS(S), 11 31) */
+/*         COMBO(St, &kp LS(T), 12 31) */
+/*         COMBO(Sh, &kp LS(H), 13 31) */
+/*         COMBO(Sk, &kp LS(K), 14 31) */
+/*         COMBO(Sx, &kp LS(X), 15 32) */
+/*         COMBO(Sn, &kp LS(N), 16 32) */
+/*         COMBO(Sa, &kp LS(A), 17 32) */
+/*         COMBO(Si, &kp LS(I), 18 32) */
+/*         COMBO(So, &kp LS(O), 19 32) */
+/*         COMBO(Sc, &kp LS(C), 21 31) */
+/*         COMBO(Sg, &kp LS(G), 22 31) */
+/*         COMBO(Sd, &kp LS(D), 23 31) */
+/*         COMBO(Sm, &kp LS(M), 26 32) */
+/*         COMBO(Scomma, &kp SEMI, 27 32) */
+/*         COMBO(Sdot, &kp COLON, 28 32) */
+/*         COMBO(Se, &kp LS(E), 16 17 32) */
+/*     }; */
+/* }; */
 
 / {
     behaviors {
@@ -122,7 +122,7 @@ combo_##NAME { \
             compatible = "zmk,behavior-hold-tap";
             label = "homerow mods left";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "hold-while-undecided";
             tapping-term-ms = <120>;
             /* quick-tap-ms = <100>; */
             // global-quick-tap;
@@ -135,7 +135,7 @@ combo_##NAME { \
             compatible = "zmk,behavior-hold-tap";
             label = "homerow mods right";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "hold-while-undecided";
             tapping-term-ms = <120>;
             /* quick-tap-ms = <100>; */
             // global-quick-tap;
@@ -148,7 +148,7 @@ combo_##NAME { \
             compatible = "zmk,behavior-hold-tap";
             label = "my layer taps";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "hold-while-undecided";
             tapping-term-ms = <120>;
             /* quick-tap-ms = <100>; */
             // global-quick-tap;

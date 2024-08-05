@@ -156,5 +156,14 @@ combo_##NAME { \
             // non-thumb keys
             // hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23>;
         };
+        spc_super: space_super {
+            compatible = "zmk,behavior-hold-tap";
+            label = "space super taps";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <120>;
+            quick-tap-ms = <200>;
+            bindings = <&kp>, <&kp>;
+        };
     };
 };

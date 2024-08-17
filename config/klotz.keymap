@@ -46,7 +46,7 @@
                 &hl LCTRL Z    &kp X    &kp C    &kp V    &kp B                  &kp N     &kp M    &kp COMMA &kp DOT  &hr RCTRL SLASH
                                                  &my_lt LOWER ESC &spc_super LGUI SPACE &kp ENTER &my_lt RAISE BSPC
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp C_PREV C_NEXT>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp C_NEXT C_PREV>;
         };
         numbers {
             label = "LOWER";
@@ -57,7 +57,7 @@
                 &kp F11  &kp F12   &trans  &kp DEL  &kp TAB          &kp TAB       &kp UNDER  &kp PLUS &kp NUHS &kp RBKT
                                            &trans   &spc_super LGUI SPACE   &hr ESC ENTER &mo ADJUST
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp C_PREV C_NEXT>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp C_NEXT C_PREV>;
         };
         symbols {
             label = "RAISE";
@@ -68,7 +68,7 @@
                 &kp RA(N8)  &kp RA(N9)  &kp RA(N7) &kp RA(N0) &none          &kp PSCRN     &kp RA(RBKT)    &kp NUBS   &kp LS(NUBS) &kp ESC
                                                    &mo ADJUST &spc_super LGUI SPACE &hr ESC ENTER &trans
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp C_PREV C_NEXT>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp C_NEXT C_PREV>;
         };
         combos {
             label = "ADJUST";
@@ -79,7 +79,7 @@
                 &none    &none      &none    &none      &none      &none    &none    &none    &none    &sys_reset
                                              &trans     &trans     &trans   &trans
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp C_PREV C_NEXT>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp C_NEXT C_PREV>;
         };
         bluetooth {
             label = "BTC";
@@ -90,7 +90,7 @@
                 &none       &none  &none  &none  &none          &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none
                                           &none  &none          &none         &none
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp C_PREV C_NEXT>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp C_NEXT C_PREV>;
         };
 
     };

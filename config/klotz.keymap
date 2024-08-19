@@ -45,7 +45,7 @@
                 &hl LALT Q     &kp W    &kp E    &kp R    &kp T                  &kp Y     &kp U    &kp I     &kp O    &hr RALT P
                 &hl LSHFT A    &kp S    &kp D    &kp F    &kp G                  &kp H     &kp J    &kp K     &kp L    &hr RSHFT SEMI
                 &hl LCTRL Z    &kp X    &kp C    &kp V    &kp B                  &kp N     &kp M    &kp COMMA &kp DOT  &hr RCTRL SLASH
-                                                 &my_lt LOWER ESC &hl GUI SPACE  &kp ENTER &my_lt RAISE BSPC
+                                                 &my_lt LOWER ESC &spc_super GUI SPACE  &kp ENTER &my_lt RAISE BSPC
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp C_NEXT C_PREV>;
         };
@@ -67,7 +67,7 @@
                 &kp EXCL    &kp AT      &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET     &kp AMPS     &kp STAR   &kp LPAR     &kp RPAR
                 &kp SQT     &kp MINUS   &kp LBKT   &kp GRAVE  &none          &kp LEFT      &kp DOWN     &kp UP     &kp RIGHT    &kp LS(NUHS)
                 &kp RA(N8)  &kp RA(N9)  &kp RA(N7) &kp RA(N0) &none          &kp PSCRN     &kp RA(RBKT)    &kp NUBS   &kp LS(NUBS) &kp ESC
-                                                   &mo ADJUST &hl GUI SPACE &kp ENTER &trans
+                                                   &mo ADJUST &spc_super GUI SPACE &kp ENTER &trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN  &inc_dec_kp C_NEXT C_PREV>;
         };
